@@ -3,7 +3,7 @@ class Team
   attr_writer :leader
   def initialize(name, players, leader)
     @name = name
-    @players = players
+    @players = players.class
     @leader = leader
     @score = 0
   end
